@@ -1,0 +1,26 @@
+### Listar todos os task
+GET http://localhost:3000/task
+
+### Obter um task por ID
+GET http://localhost:3000/task/1
+### Criar um task
+POST http://localhost:3000/task
+Content-Type: application/json
+
+{
+    "name": "fazer atividade",
+    "description": "atividade API teste software",
+    "date": "2025-06-07"
+    
+}
+
+### Atualizar um task
+PATCH http://localhost:3000/task/1
+Content-Type: application/json
+
+{
+    "name": "fazer atividade teste software"
+}
+
+### Deletar um task
+DELETE http://localhost:3000/task/1
