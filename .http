@@ -1,26 +1,55 @@
-### Listar todos os task
-GET http://localhost:3000/task
+###Register
+POST http://localhost:3000/auth/register
+Content-Type: application/json
 
-### Obter um task por ID
-GET http://localhost:3000/task/1
+{
+    "username": "",
+    "name": "",
+    "password": "",
+    "confirmPassword": "",
+    "email": "@gmail.com"
+}
+###Login
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "username": "",
+    "password": ""
+
+}
+
 ### Criar um task
 POST http://localhost:3000/task
 Content-Type: application/json
+Authorization: Bearer {token aqui}
 
 {
-    "name": "fazer atividade",
-    "description": "atividade API teste software",
-    "date": "2025-06-07"
     
+  "name": "",
+  "description": "",
+  "date": "yyyy-mm-dd" 
 }
 
+### Listar todos os task
+GET http://localhost:3000/task
+Authorization: Bearer {token aqui}
+
+### Obter um task por ID
+GET http://localhost:3000/task/7
+Authorization: Bearer {token aqui}
+
+
 ### Atualizar um task
-PATCH http://localhost:3000/task/1
+PATCH http://localhost:3000/task/2
 Content-Type: application/json
+Authorization: Bearer {token aqui}
 
 {
-    "name": "fazer atividade teste software"
+    "name": ""
 }
 
 ### Deletar um task
 DELETE http://localhost:3000/task/1
+Authorization: Bearer {token aqui}
+
