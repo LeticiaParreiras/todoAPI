@@ -20,17 +20,8 @@ npm run start:dev
 ```
 A API será executada por padrão em: http://localhost:3000
 
- ## 🧪Como usar/testar
-Você pode testar os endpoints de duas formas:
-
-✔️ Usando o arquivo .http no VS Code
+ ## 🧪Como usar
 1. Instale a extensão REST Client no VS Code.
-
 1. Abra o arquivo .http presente no projeto.
-
 1. Clique em "Send Request" acima das requisições.
 
-✔️ Usando o Postman
-1. Abra o Postman.
-
-1. Importe a coleção de testes localizada na pasta /test.
